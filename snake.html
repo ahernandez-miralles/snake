@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <style>
+      #status-bar {
+	display: flex;
+	width: 500px;
+      }
+
+      #gameover {
+	display: none;
+      }
+
+      #paused, #gameover {
+	margin-left: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="500" height="400"></canvas>
+    <div id="status-bar">
+      <p>Score: <span id="score">0</span></p>
+      <p id="paused">Paused</p>
+      <p id="gameover">Game over!</p>
+    </div>
+    <script src="snake.js"></script>
+  </body>
+</html>
